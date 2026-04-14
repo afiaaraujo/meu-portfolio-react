@@ -1,0 +1,142 @@
+/* 1. Configurações Globais (Reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; 
+    color: #212529;
+}
+
+/* 2. Cabeçalho e Navegação Profissional */
+header {
+    background-color: #1a1e23; 
+    color: #ffffff;
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 4px solid #007bff; 
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #dee2e6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; 
+}
+
+/* 3. Estilização da Foto de Perfil (Clean) */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #007bff; 
+    display: block;
+    margin: 0 auto 1.5rem;
+    filter: grayscale(20%); 
+}
+
+/* 4. Seções (Sobre e Projetos) */
+section {
+    max-width: 850px;
+    margin: 2.5rem auto;
+    padding: 3rem;
+    background: #ffffff;
+    border: 1px solid #e9ecef; 
+    border-radius: 4px; 
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: #1a1e23;
+    text-transform: uppercase;
+}
+
+/* 5. Grid de Projetos */
+#lista-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Card de Projeto Estilo "Enterprise" */
+.card-projeto {
+    background: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1.5rem;
+    width: 260px;
+    text-align: left; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projeto:hover {
+    border-color: #007bff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-projeto h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.card-projeto p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Botão de Link Estilo "Button Primary" */
+.botao-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.botao-link:hover {
+    background-color: #0056b3;
+}
+
+/* 6. Rodapé */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #f8f9fa;
+    color: #6c757d;
+    border-top: 1px solid #dee2e6;
+    font-size: 0.8rem;
+}
